@@ -24,6 +24,31 @@ Restart Claude Desktop. Then:
 
 > "Create a TanStack Start project called 'my-app' with Clerk auth and Drizzle ORM"
 
+## OpenCode
+
+Configuration file location:
+
+Add to `~/.config/opencode/opencode.json` (macOS/Linux) or in `C:\Users\<username>\.config\opencode\opencode.json` (Windows):
+
+```json
+{
+  "mcp": {
+    "tanstack": {
+      "type": "local",
+      "command": [
+        "npx",
+        "-y",
+        "@tanstack/cli",
+        "mcp"
+      ],
+      "enabled": true
+    }
+  }
+}
+```
+
+Restart OpenCode to apply changes.
+
 ## Manual Start
 
 ```bash
